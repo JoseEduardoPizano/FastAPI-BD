@@ -45,3 +45,11 @@ class Libros(BaseModel):
     id_autor: int
     id_editorial: int
     id_categoria: int
+
+class Compras(BaseModel):
+    id_compra: Optional[int]
+    fecha: datetime
+    precio: int
+    cantidad: int
+    id_libro: int
+    id_cliente: int
